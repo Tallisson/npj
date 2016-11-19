@@ -1,0 +1,167 @@
+.conteudo h3{
+    color: #76716e;
+    margin-left: 10%;
+    margin-top: 20px;
+    font-style: italic;
+}
+.conteudo .formulario{
+    max-width: 98%;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.conteudo form{
+    max-width: 98%;
+}
+.conteudo input{
+    border: 0.5px solid #76716e;
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+    padding-left: 10px;
+    height: 30px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 10%;
+    float: left;
+    max-width: 98%;
+}
+.conteudo div a{
+    margin-top: 20px;
+    margin-left: 7%;
+    float: left;
+    text-decoration: none;
+    background-color: #76716e;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+.conteudo div a:hover{
+    background-color: black;
+}
+.conteudo button{
+    border-radius: 0 10px 10px 0;
+    margin-top: 20px;
+    border: 0.5px solid #76716e;
+    height: 30px;
+    width: 30px;
+    float: left;
+    max-width: 98%;
+}
+.conteudo button i:before{
+    font-family:  FontAwesome;
+    font-style: normal;
+    font-size: 18px;
+    color: #413f3c;
+    content: "\f002";
+}
+.conteudo hr{
+    border-style: inset;
+    border-width: 1px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.conteudo #barraTitulos{
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 98%;
+}
+
+.conteudo .tabela .primeiro{
+   width: 13px;
+}
+.conteudo .tabela{
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.conteudo .tabela input{
+    width: 15px;
+    max-width: 100%;
+    height: 15px;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 2%;
+}
+
+.conteudo .tabela th{
+    border-bottom: 1px solid #413f3c;
+    padding: 1.5%;
+}
+.conteudo .tabela td{
+    border-bottom: 1px solid #413f3c;
+    padding: 1.5%;
+}
+.conteudo .tabela td i:before{
+    font-family:  FontAwesome;
+    font-style: normal;
+    font-size: 18px;
+    color: #413f3c;
+    content: "\f07b";
+}
+.conteudo .tabela td a{
+    text-decoration: none;
+}
+.conteudo .tabela td a:hover{
+    color: #4f81e6;
+}
+/*css da janela modal*/
+#mask{
+    position: absolute;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+    height: 100%;
+}
+#boxes .window{
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: #413f3c;
+
+}
+#boxes .window form input{
+    border: 1px solid #413f3c;
+    height: 25px;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 1%;
+}
+/*personalizar janela*/
+#boxes #dialog{
+    width: 60%;
+    height: auto;
+    background-image: url("/img/fundo-site.png");
+}
+
+.close{
+    display: block;
+    text-align: right;
+
+}
+@media only screen and (max-width: 780px) {
+    .conteudo ul .cliente{
+        margin-right: 15%;
+    }
+    .conteudo ul{
+        max-width: 80%;
+    }
+    .conteudo #barraTitulos{
+        max-width: 80%;
+    }
+    .conteudo .tipo{
+        margin-left: -2%;
+    }
+    .conteudo .tipo input{
+        margin-right: -3%;
+    }
+
+}

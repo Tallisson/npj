@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucleo Processo Juridico - FACEMA</title>
+
+    <style type="text/css">
+        @import url("css/index.css");
+        @import url("css/processos.css");
+    </style>
+    <link  href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jsIndex.js"></script>
+    <script type="text/javascript" src="js/jsProcessos.js"></script>
+</head>
+<body>
+<section id="cadastrarProcesso">
+<!-- janela modal -->
+<div id="boxes">
+
+    <div id="dialog" class="window">
+       <h1>Cadastrar Processo</h1>
+        <a href="#" class="close">Fechar [x]</a><br>
+        <form action="#" method="post">
+            <label>Nome cliente</label>
+            <input type="text" name="nome" placeholder="Digite seu nome completo">
+
+        </form>
+    </div>
+    <div id="mask"></div>
+</div>
+<!-- final-->
+</section>
+
+<header id="cabecalho">
+    <div class="topo">
+        <a href="index.html" id="add"><img src="img/logo-nucleo-juridico.png" id="logo-nucleo-juridico"></a>
+
+    </div>
+</header>
+<nav class="menu">
+    <div class="menu-mostrar">
+    <ul>
+        <li><a href="index.html"> Inicio</a></li>
+        <li><a href="paginas/processos.html">Processos</a></li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Contatos</a> </li>
+        <li><a href="#">Ajuda</a> </li>
+
+    </ul>
+        <form action="#" method="get">
+
+            <button id="bt-buscar"><i></i></button>
+            <input type="search" name="buscar" placeholder="Buscar processos, casos...">
+        </form>
+    </div>
+    <div class="menu-oculto">
+       <strong>Menu</strong>
+        <button id="mostrar"><i></i></button>
+        <button id="bt-buscar-modo"><i id="buscar-oculto"></i></button>
+        <form action="#" method="get" id="formulario-busca">
+            <button id="bt-de-buscar" ><i></i></button>
+            <input type="search" name="buscar" placeholder="Processos, Contatos ...">
+
+        </form>
+    </div>
+    <div class="categoria-menu-oculto">
+
+        <ul>
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="processos.html">Processos</a></li>
+            <li><a href="#">Agenda</a></li>
+            <li><a href="#">Contatos</a> </li>
+            <li><a href="#">Ajuda</a> </li>
+        </ul>
+    </div>
+</nav>
+<section class="corpo">
+    <section>
+        <div class="conteudo">
+    <div class="formulario">
+
+        <form action="#" method="get">
+            <input type="search" name="buscarProcessos" placeholder="Digite o nome do processo ou o qualquer coisa relacionada ao processo">
+            <button><span><i></i></span></button>
+        </form>
+        <a href="#dialog" id="adicionar" name="adicionar">Adicionar</a>
+    </div>
+            <br><h3>Processos e Casos</h3>
+            <table class="tabela" cellspacing="0">
+                <thead>
+                <tr>
+                    <th><input type="checkbox" name="marcarTodos" class="primeiro"></th>
+                    <th>TIPO</th>
+                    <th>TITULO / CLIENTE</th>
+                    <th>AÇÃO NUMERO</th>
+                    <th>FORO</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox" name="marcado" class="primeiro"></td>
+                    <td><i></i></td>
+                    <td><a href="#"> Eleilson Maciel</a></td>
+                    <td>suspenso</td>
+                    <td> 123º</td>
+                </tr>
+                </tbody>
+
+            </table>
+
+    </div>
+    </section>
+    <aside>
+        <div class="categoria">
+            <h4>LEMBRETES</h4>
+            <hr>
+
+            <p><i>Você não possui nenhuma tarefa a fazer!</i></p>
+        </div>
+    </aside>
+
+</section>
+<footer>
+    <div class="rodape">
+        <p>&copy Desenvolvido por GCT Developers - 2016 </p>
+    </div>
+</footer>
+<hr width="100px">
+</body>
+</html>

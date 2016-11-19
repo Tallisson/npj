@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucleo Processo Juridico - FACEMA</title>
+
+    <style type="text/css">
+        @import url("css/index.css");
+    </style>
+    <link  href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jsIndex.js"></script>
+</head>
+<body>
+<header id="cabecalho">
+    <div class="topo">
+        <a href="index.html"><img src="img/logo-nucleo-juridico.png" id="logo-nucleo-juridico"></a>
+
+    </div>
+</header>
+<nav class="menu">
+    <div class="menu-mostrar">
+    <ul>
+        <li><a href="index.html"> Inicio</a></li>
+        <li><a href="processos.html">Processos</a></li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Contatos</a> </li>
+        <li><a href="#">Ajuda</a> </li>
+
+    </ul>
+        <form action="#" method="get">
+
+            <button id="bt-buscar"><i></i></button>
+            <input type="search" name="buscar" placeholder="Buscar processos, casos...">
+        </form>
+    </div>
+    <div class="menu-oculto">
+       <strong>Menu</strong>
+        <button id="mostrar"><i></i></button>
+        <button id="bt-buscar-modo"><i id="buscar-oculto"></i></button>
+        <form action="#" method="get" id="formulario-busca">
+            <button id="bt-de-buscar" ><i></i></button>
+            <input type="search" name="buscar" placeholder="Processos, Contatos ...">
+
+        </form>
+    </div>
+    <div class="categoria-menu-oculto">
+
+        <ul>
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="processos.html">Processos</a></li>
+            <li><a href="#">Agenda</a></li>
+            <li><a href="#">Contatos</a> </li>
+            <li><a href="#">Ajuda</a> </li>
+        </ul>
+    </div>
+</nav>
+<section class="corpo">
+    <section>
+        <div class="conteudo">
+    <h1>Sistema de Controle de Processo Jurídico</h1>
+            <ul>
+                <li><a href="#">Bem vindos, comece adicionando suas tarefas.</a></li>
+                <hr>
+                <li><a href="processos.html">Depois cadastre seus processos.</a> </li>
+                <hr>
+                <li><a href="#">Também é possivel cadastrar seus contatos.</a></li>
+                <hr>
+                <li><a href="#">Caso precise de ajuda, nós podemos ajudar;</a> </li>
+                <hr>
+            </ul>
+
+    </div>
+    </section>
+    <aside>
+        <div class="categoria">
+            <h4>LEMBRETES</h4>
+            <hr>
+
+            <p>Você não possui nenhuma tarefa a fazer!</p>
+        </div>
+    </aside>
+
+</section>
+<footer>
+    <div class="rodape">
+        <p>&copy Desenvolvido por GCT Developers - 2016 </p>
+    </div>
+</footer>
+<hr width="100px">
+</body>
+</html>
